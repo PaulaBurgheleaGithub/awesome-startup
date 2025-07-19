@@ -1,6 +1,9 @@
 import { fetchEventData } from "../lib/fetchEventData";
 import SpeakerTabsClientWrapper from "./SpeakerTabsClientWrapper";
 
+
+
+
 export default async function SpeakerTabsWrapper() {
 	const data = await fetchEventData();
 

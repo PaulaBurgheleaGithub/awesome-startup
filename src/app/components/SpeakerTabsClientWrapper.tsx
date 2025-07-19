@@ -1,3 +1,5 @@
+// File: SpeakerTabsClientWrapper.tsx (new name)
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -22,7 +24,7 @@ export default function SpeakerTabsClientWrapper({ speakersByTrack }: Props) {
 		return () => clearTimeout(timeout);
 	}, []);
 
-	if (isLoading) {
+	if (isLoading || !speakersByTrack) {
 		return (
 			<div className="space-y-4">
 				<SkeletonSpeakerCard />

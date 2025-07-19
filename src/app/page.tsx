@@ -1,6 +1,6 @@
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import SpeakerTabsWrapper from "./components/SpeakerTabsServer";
+import SpeakerTabsWrapper from "./components/SpeakerTabsClientWrapper";
 
   export default async function AwesomeEvent() {
     return (

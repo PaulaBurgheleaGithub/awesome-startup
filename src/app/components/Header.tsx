@@ -2,6 +2,7 @@ import { fetchEventData } from "../lib/fetchEventData";
 
 export async function Header() {
 	const data = await fetchEventData();
+	console.log({data})
 	const newsItem = data?.RecentNews?.[1];
 
 	if (!newsItem) {

@@ -26,7 +26,7 @@ export interface Employee {
 	PhoneNumber: string;
 	Title: string;
 	Department: string;
-	Bio: string;
+	Biography: string;
 	ImageUrl: string;
 }
 
