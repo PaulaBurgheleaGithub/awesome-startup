@@ -13,7 +13,7 @@ interface Props {
 	speakersByTrack: Record<SpeakerTrack, Employee[]>;
 }
 
-export default function SpeakerTabsClientWrapper({ speakersByTrack }: Props) {
+export default function SpeakerTabsWrapper({ speakersByTrack }: Props) {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
