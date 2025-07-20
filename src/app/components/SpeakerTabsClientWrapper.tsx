@@ -1,5 +1,3 @@
-// File: SpeakerTabsClientWrapper.tsx (new name)
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -7,7 +5,7 @@ import { SpeakerTabs } from "./SpeakerTabs";
 import { Employee } from "@/app/types";
 import { SkeletonSpeakerCard } from "./Skeletons/SkeletonSpeakerCard";
 
-type SpeakerTrack = "Track A" | "Track B" | "Track C";
+type SpeakerTrack = "Day 1" | "Day 2" | "Day 3";
 
 interface Props {
 	speakersByTrack: Record<SpeakerTrack, Employee[]>;

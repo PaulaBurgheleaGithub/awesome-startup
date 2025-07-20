@@ -10,12 +10,12 @@ export function BioWithToggle({ bio }: { bio: string }) {
 	const preview = bio.slice(0, limit);
 
 	return (
-		<p className="mt-2 text-gray-700">
+		<p className="mt-2 text-gray-300">
 		{expanded || !isLong ? bio : `${preview}... `}
 		{isLong && (
 			<button
 			onClick={() => setExpanded((prev) => !prev)}
-			className="text-blue-600 hover:underline ml-1 text-sm"
+			className="text-green-300 hover:underline ml-1 text-sm"
 			>
 			{expanded ? "Show less" : "Read more"}
 			</button>

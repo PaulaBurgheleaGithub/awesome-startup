@@ -1,6 +1,6 @@
 import { Employee } from "@/app/types/events";
 
-export type SpeakerTrack = "Track A" | "Track B" | "Track C";
+export type SpeakerTrack = "Day 1" | "Day 2" | "Day 3";
 export type SpeakersByTrack = Record<SpeakerTrack, Employee[]>;
 
 /**
@@ -8,14 +8,14 @@ export type SpeakersByTrack = Record<SpeakerTrack, Employee[]>;
  */
 export function groupSpeakersByTrack(employees: Employee[]): SpeakersByTrack {
 	const grouped: SpeakersByTrack = {
-		"Track A": [],
-		"Track B": [],
-		"Track C": [],
+		"Day 1": [],
+		"Day 2": [],
+		"Day 3": [],
 	};
 
 	employees.forEach((employee, index) => {
 		// Rotate assignment by index as a placeholder
-		const track = (["Track A", "Track B", "Track C"] as SpeakerTrack[])[index % 3];
+		const track = (["Day 1", "Day 2", "Day 3"] as SpeakerTrack[])[index % 3];
 		grouped[track].push(employee);
 	});
 
