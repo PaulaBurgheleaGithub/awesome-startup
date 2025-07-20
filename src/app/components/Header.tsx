@@ -1,12 +1,9 @@
-import { fetchEventData } from "../lib/fetchEventData";
+interface Props {
+	headline: string;
+	subheadline: string;
+}
 
-export async function Header() {
-	const data = await fetchEventData();
-	const newsItem = data?.RecentNews?.[1];
-
-	const headline = newsItem?.Title ?? "Exciting Event Coming Soon";
-	const subheadline =
-		newsItem?.Summary ?? "Stay tuned for updates from Awesome Startup.";
+export async function Header({headline, subheadline}:Props) {
 
 	return (
 	<section className="bg-black text-white min-h-[50vh] flex items-center justify-center px-6 sm:px-12 md:px-20">

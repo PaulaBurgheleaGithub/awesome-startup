@@ -9,7 +9,7 @@ import { BioWithToggle } from "./BioWithToggle";
 type SpeakerTrack = "Day 1" | "Day 2" | "Day 3";
 
 interface Props {
-  speakersByTrack: Record<SpeakerTrack, Employee[]>;
+	speakersByTrack: Record<SpeakerTrack, Employee[]>;
 }
 
 export function SpeakerTabs({ speakersByTrack }: Props) {
